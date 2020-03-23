@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+    <include
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F4F4"
+        android:layout_marginTop="0dp"
+		android:padding="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:text="PIN Lama Anda" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/oldpin"
+            android:inputType="numberPassword"
+            android:textColor="#000"
+            android:textColorHint="#bababa"
+            android:fontFamily="@font/adellesansregular"
+            android:background="#fff"
+            android:id="@+id/oldpin" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/adellesansregular"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:text="PIN Baru Anda" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:background="#fff"
+            android:fontFamily="@font/adellesansregular"
+            android:inputType="numberPassword"
+            android:textColorHint="#bababa"
+            android:hint="@string/newpin"
+            android:id="@+id/newpin" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:layout_gravity="left"
+            android:text="Konfirmasi PIN Baru Anda" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/confirmnewpin"
+            android:inputType="numberPassword"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:textColorHint="#bababa"
+            android:background="#fff"
+            android:id="@+id/confirmnewpin" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnkirim"
+        android:textColor="#fff"
+        android:text="Kirim"
+        android:fontFamily="@font/adellesansregular"
+        android:layout_marginTop="20dp"
+        android:background="#090b8c" />
+</LinearLayout>

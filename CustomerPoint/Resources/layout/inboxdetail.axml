@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <include
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/imgbackground"
+                android:scaleType="fitXY"
+				android:background="@drawable/background"
+                android:layout_height="150dp"
+                android:layout_width="match_parent" />
+            <TextView
+                android:padding="10sp"
+                android:id="@+id/title"
+				android:text="Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:justificationMode="inter_word"
+                android:textColor="#000" />
+            <TextView
+                android:layout_marginTop="-10dp"
+                android:id="@+id/desc"
+				android:text="Desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:justificationMode="inter_word"
+                android:padding="10sp"
+                android:textColor="#000" />
+			 <TextView
+                android:layout_marginTop="-10dp"
+                android:id="@+id/tanggal"
+				android:text="Tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:justificationMode="inter_word"
+                android:paddingLeft="10sp"
+				android:paddingBottom="10sp"
+                android:textColor="#000" />
+			<TextView
+                android:layout_marginTop="-10dp"
+                android:id="@+id/fulldesc"
+				android:text="Full Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:justificationMode="inter_word"
+                android:padding="10sp"
+                android:textColor="#000" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

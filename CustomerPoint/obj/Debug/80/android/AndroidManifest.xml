@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CustomerPoint.CustomerPoint" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <supports-screens android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:allowBackup="false" android:label="@string/app_name" android:icon="@drawable/logo" android:name="md54cda49ab059154aec661467d96f1f607.CoreApplication" android:debuggable="true">
+    <activity android:label="Customer Point" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.customerkeyact">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Customer Point" android:screenOrientation="portrait" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.customerotp" />
+    <activity android:label="CustomerPin" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.CustomerPin" />
+    <activity android:label="editprofile" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.editprofile" />
+    <activity android:label="lupapin" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.lupapin" />
+    <activity android:label="Mitra Aquaproof" android:screenOrientation="portrait" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.MainActivity" />
+    <activity android:label="promodetail" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.promodetail" />
+    <activity android:label="Register" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.Register" />
+    <activity android:label="ubahpin" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.ubahpin" />
+    <activity android:label="verifikasi" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.verifikasiphone" />
+    <activity android:label="verifikasipin" android:theme="@style/MyTheme" android:name="md54cda49ab059154aec661467d96f1f607.verifikasipin" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CustomerPoint.CustomerPoint.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.CustomerPoint.CustomerPoint" />
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
+  </application>
+</manifest>

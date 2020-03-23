@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <include
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#090b8c" />
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardBackgroundColor="#fff"
+        android:layout_marginTop="-45dp"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phone"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#fff">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:backgroundTint="#0011ff"
+            android:layout_marginTop="0dp"
+            android:hint="@string/Masukannohp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/adellesansregular"
+            android:inputType="number"
+            android:textColor="#000"
+            android:id="@+id/nohp" />
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnsend"
+            android:text="Kirim"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:background="@drawable/roundedbutton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

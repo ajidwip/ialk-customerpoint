@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <include
+        layout="@layout/toolbar" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtketerangan"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:fontFamily="@font/adellesansregular"
+        android:text="Masukan 6 digit kode OTP Anda"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:textColor="#000"
+            android:inputType="number"
+            android:fontFamily="@font/adellesansregular"
+            android:backgroundTint="#0011ff"
+            android:id="@+id/edt1" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:fontFamily="@font/adellesansregular"
+            android:inputType="number"
+            android:textColor="#000"
+            android:backgroundTint="#0011ff"
+            android:id="@+id/edt2" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:fontFamily="@font/adellesansregular"
+            android:textColor="#000"
+            android:inputType="number"
+            android:backgroundTint="#0011ff"
+            android:id="@+id/edt3" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:inputType="number"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:backgroundTint="#0011ff"
+            android:id="@+id/edt4" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:textColor="#000"
+            android:inputType="number"
+            android:fontFamily="@font/adellesansregular"
+            android:backgroundTint="#0011ff"
+            android:id="@+id/edt5" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:inputType="number"
+            android:backgroundTint="#0011ff"
+            android:textColor="#000"
+            android:fontFamily="@font/adellesansregular"
+            android:id="@+id/edt6" />
+    </LinearLayout>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:backgroundTint="#0011ff"
+        android:layout_marginTop="60dp"
+        android:hint="@string/newpin2"
+        android:textColor="#000"
+        android:fontFamily="@font/adellesansregular"
+        android:inputType="number"
+        android:id="@+id/pinbaru" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:backgroundTint="#0011ff"
+        android:fontFamily="@font/adellesansregular"
+        android:layout_marginTop="20dp"
+        android:hint="@string/confirmnewpin2"
+        android:inputType="number"
+        android:textColor="#000"
+        android:id="@+id/verifikasipinbaru" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnsend"
+        android:text="Ubah PIN"
+        android:textColor="#000"
+        android:fontFamily="@font/adellesansregular"
+        android:background="@drawable/roundedbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>
